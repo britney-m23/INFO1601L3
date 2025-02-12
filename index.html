@@ -4,59 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Poem</title>
-    
-	<style>
-		.bold{
-		  font-weight: bold;
-		}
-		
-		h2{
-		  text-align: center;
-		  text-decoration: underline overline solid black;
-		}
-		
-		p{
-		  text-align: justify;
-		  width:50vw;
-		  margin-left: auto;
-		  margin-right: auto;
-		}
-		
-		section{
-		  border-bottom: 5px solid black;
-		  height: 40vh;
-		  overflow-y:scroll
-		}
-		
-		#section1::before{
-		  background-image: url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
-		  background-size: stretch;
-		  background-position: center;
-		  content: "";
-		  position: absolute;
-		  width:100%;
-		  height: 40vh;
-		  z-index: -2;
-		  opacity: 0.3;
-		}
-		
-		#section2{
-		  padding: 2em;
-		  color: white;
-		  background: rgb(131,58,180);
-		  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
-		}
-		
-		p:hover{
-		  outline: 2px double red;
-		}
-		</style>     
-        
-        
-     
-           
-       
-    
+    <style>
+        section {
+            height: 80vh;
+            border-bottom: 5px solid black;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: overline underline solid black;
+        }
+        p {
+            text-align: justify;
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p:hover {
+            outline: 2px double red;
+        }
+        .bold-first-word {
+            font-weight: bold;
+        }
+        #section2 {
+            padding: 2em;
+            color: white;
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        div {
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            border-radius: 4px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div > h2 {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <section>
@@ -74,5 +70,11 @@
         <p><span class="bold-first-word">Why</span> won't students come to labs? I see them all now stressing.<br>
         If you only learned this basic programming, You would surely now be zessing.</p>
     </section>
+    <section id="section2">
+        <div>
+            <h2>My Div</h2>
+        </div>
+    </section>
 </body>
 </html>
+
